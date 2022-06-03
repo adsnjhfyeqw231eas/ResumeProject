@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo yum -y update
 sleep 5
-sudo yum -y git httpd
+sudo yum -y install git httpd
 sleep 5
 sudo amazon-linux-extras install php8.0 mariadb10.5 -y
 sleep 10
