@@ -1,6 +1,6 @@
-step 1: complete rds steps
-step 2: create launch template with our script
-step 3: create autoscaling, with ELB and TG 
+step 1: complete rds steps,
+step 2: create launch template with our script,
+step 3: create autoscaling(with scale-in protection on) with ELB and TG,
 Note: we are not launching any piece of ec2 instacne by hand/manually.
 
 
