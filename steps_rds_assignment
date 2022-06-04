@@ -1,13 +1,19 @@
-step 1: complete rds steps,
-step 2: create launch template with our script,
-step 3: create autoscaling(with scale-in protection on) with ELB and TG,
-Note: we are not launching any piece of ec2 instacne by hand/manually.
+1. vpc create ( with subne3t, igw, rt)
+2. create rds with multi AZ (15 mins) - rds in private subnet
+3., create s3 public bucket(disableacl and make public) upload an CV profile pic and make it public using acl.
+3. create a launch template (name, addition conf. setup.sh github copy-paste)
+4. only public subnet - create Auto scaling with ELB, and target group, scale in protection for autoscaling -> off, using launch template
+5. lets wait 5 mins and see out ec2 sping up
+6. For https integration
+     - create hosted zone
+     - put nameserver detaisl to freenom
+     - connect elb to hosted zone
+     - create ACM cert and and create its cert record to r53
+     - ELB (listener rule):
+         - http -> https
+         - https connects to acm cert
+=========public data eends========
 
 
-
-step 4: upcoming S3 ( create private and public bucket )
-step 5: integrate HTTPS 
-
-(ACM,ELB -> Route53)
-
-
+7. create a s3 private (default) s3 , upload an object
+8. IAM -> USER -> ACCESS KEY, ID of root user-> copy -> install s3 browser.exe in windows - fill up access key and id.
