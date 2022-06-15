@@ -4,7 +4,7 @@ sleep 5
 sudo yum -y install git httpd
 sleep 10
 sudo amazon-linux-extras install php8.0 mariadb10.5 -y
-sleep 17
+sleep 30
 sudo systemctl restart httpd
 sleep 4
 sudo systemctl enable httpd
