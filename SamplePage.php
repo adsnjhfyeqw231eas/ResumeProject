@@ -26,7 +26,9 @@
 
 <!-- Input form -->
 <form action="<?PHP echo $_SERVER['SCRIPT_NAME'] ?>" method="POST">
+<img src="https://pub-test-bucket-9782.s3.amazonaws.com/rds-resume-pub.jpeg" align="right">
   <table border="0">
+<!--    <tr><td><img src="https://pub-test-bucket-9782.s3.amazonaws.com/rds-resume-pub.jpeg" align="right"></td></tr>-->
     <tr>
       <td>NAME</td>
       <td>ADDRESS</td>
