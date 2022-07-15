@@ -5,4 +5,4 @@
  define('DB_PASSWORD', 'admin123');
  define('DB_DATABASE', 'sample');
  
- ?>"
+ ?>
